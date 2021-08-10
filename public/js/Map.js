@@ -3,6 +3,7 @@ import { mapLegend } from './MapLegend.js';
 
 import { generateRegions } from './MapRegions.js';
 import { generateMapItems } from './MapItems.js';
+import { generateMapMarkers } from "./MapMarkers.js";
 
 // Map
 const map = L.map("map", {
@@ -69,3 +70,6 @@ generateMapItems();
 
 // Map Legend
 mapLegend().addTo(map);
+
+// Markers
+generateMapMarkers(map);
